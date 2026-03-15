@@ -1,0 +1,745 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jagadeesh Chinta | Data Science Minimalist Portfolio</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <!-- Boxicons for icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Custom Cursor -->
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <!-- Background Elements -->
+    <div class="bg-glow bg-glow-1"></div>
+    <div class="bg-glow bg-glow-2"></div>
+
+    <!-- Navigation -->
+    <header class="header">
+        <a href="#" class="logo">Portfolio<span>.</span></a>
+        <nav class="navbar">
+            <a href="#home" class="active"><i class='bx bx-home-alt'></i> Home</a>
+            <a href="#about"><i class='bx bx-user'></i> About</a>
+            <a href="#projects"><i class='bx bx-code-alt'></i> Projects</a>
+            <a href="#skills"><i class='bx bx-medal'></i> Skills</a>
+            <a href="#education"><i class='bx bx-book-open'></i> Education</a>
+            <a href="#certificates"><i class='bx bx-file'></i> Certificates</a>
+            <a href="#contact"><i class='bx bx-envelope'></i> Contact</a>
+        </nav>
+        <div class="header-right-icons">
+            <a href="#"><i class='bx bx-satellite'></i></a>
+            <a href="#"><i class='bx bx-sun'></i></a>
+            <a href="#"><i class='bx bx-play'></i></a>
+            <a href="#"><i class='bx bx-cog'></i></a>
+        </div>
+        <div class="bx bx-menu" id="menu-icon"></div>
+    </header>
+
+    <!-- Home / Hero Section -->
+    <section class="home" id="home">
+        <div class="hero-container text-center reveal-up">
+            <h1 class="glowing-name">Jagadeesh Chinta</h1>
+            
+            <div class="roles-container">
+                <span class="role-pill">Developer</span>
+                <span class="dot">•</span>
+                <span class="role-pill">Designer</span>
+                <span class="dot">•</span>
+                <span class="role-pill">Innovator</span>
+            </div>
+
+            <div class="hero-profile">
+                <!-- Place a file named profile_image.jpeg in the folder to see it here automatically -->
+                <div class="profile-img-container">
+                    <img src="profile_image.jpeg" alt="Jagadeesh Chinta" id="profile-pic" onerror="this.style.display='none'; document.getElementById('fallback-icon').style.display='block';">
+                    <i class='bx bx-user' id="fallback-icon" style="display: none; font-size: 15rem; color: var(--main-color);"></i>
+                </div>
+            </div>
+
+            <div class="explore-section">
+                <a href="#overview" class="explore-btn">Explore Portfolio <i class='bx bx-right-arrow-alt'></i></a>
+                <p class="scroll-text">Scroll to explore</p>
+                <i class='bx bx-down-arrow-alt scroll-icon'></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- Overview / Explore Menu Section -->
+    <section class="overview" id="overview">
+        <div class="overview-content text-center reveal-up wrapper">
+            <h2 class="glowing-title-cyan">Welcome to My Portfolio</h2>
+            <p class="overview-subtitle">Explore my work, skills, and journey through this interactive experience</p>
+
+            <div class="main-cards-grid mt-5">
+                <!-- Row 1 -->
+                <a href="#projects" class="explore-card glass-card reveal-up">
+                    <div class="card-icon"><i class='bx bx-code-alt'></i></div>
+                    <h3>Projects</h3>
+                    <p>Explore my projects</p>
+                </a>
+                <a href="#skills" class="explore-card glass-card reveal-up" style="transition-delay: 0.1s;">
+                    <div class="card-icon"><i class='bx bx-medal'></i></div>
+                    <h3>Skills</h3>
+                    <p>Explore my skills</p>
+                </a>
+                <a href="#about" class="explore-card glass-card reveal-up" style="transition-delay: 0.2s;">
+                    <div class="card-icon"><i class='bx bx-user'></i></div>
+                    <h3>About Me</h3>
+                    <p>Explore my about me</p>
+                </a>
+
+                <!-- Row 2 -->
+                <a href="#certificates" class="explore-card-wide glass-card reveal-up" style="transition-delay: 0.3s;">
+                    <div class="card-left">
+                        <div class="card-icon"><i class='bx bx-file'></i></div>
+                        <div class="card-text">
+                            <h3>Certificates</h3>
+                            <p>View my certificates</p>
+                        </div>
+                    </div>
+                    <i class='bx bx-right-arrow-alt card-arrow'></i>
+                </a>
+                <a href="#education" class="explore-card-wide glass-card reveal-up" style="transition-delay: 0.4s;">
+                    <div class="card-left">
+                        <div class="card-icon"><i class='bx bx-book-open'></i></div>
+                        <div class="card-text">
+                            <h3>Education</h3>
+                            <p>View my education</p>
+                        </div>
+                    </div>
+                    <i class='bx bx-right-arrow-alt card-arrow'></i>
+                </a>
+                <a href="https://drive.google.com/uc?export=download&id=1EDEasS-0XJT6cRMPm9YP1dcFghP0-YF3" download class="explore-card-wide glass-card reveal-up" style="transition-delay: 0.5s;">
+                    <div class="card-left">
+                        <div class="card-icon"><i class='bx bx-download'></i></div>
+                        <div class="card-text">
+                            <h3>Download CV</h3>
+                            <p>Download my resume</p>
+                        </div>
+                    </div>
+                    <i class='bx bx-cloud-download card-arrow'></i>
+                </a>
+            </div>
+
+            <div class="mt-5">
+                <a href="#contact" class="get-in-touch-btn">Get in Touch &darr;</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="about-header reveal-up">
+            <h2 class="glowing-title-cyan">About Me</h2>
+            <p class="overview-subtitle">I am a Data Science Enthusiast</p>
+        </div>
+
+        <div class="about-wrapper wrapper reveal-up">
+            <div class="about-content-flex">
+                <div class="about-image-column">
+                    <div class="about-image-container">
+                        <!-- Use same hero profile image or fallback if not found -->
+                        <img src="profile_image.jpeg" alt="Jagadeesh Chinta Profile" onerror="this.src=''; this.alt='Photo Space'; this.style.display='none';">
+                        <i class='bx bx-camera fallback-icon' style="font-size: 5rem; color: var(--main-color); opacity: 0.5;"></i>
+                    </div>
+                </div>
+
+                <div class="about-text-column">
+                    <h2 class="about-name">Jagadeesh Chinta</h2>
+                    <h3 class="about-title">Data Science Enthusiast</h3>
+                    
+                    <div class="about-text">
+                        <p>I’m a 3rd-year B.Tech Computer Science student at Lovely Professional University with a CGPA of 7.41, passionate about solving real-world problems through technology.</p>
+                        <p>I have a strong interest in Data Structures & Algorithms, Full-Stack Development, and Data Science, and I enjoy building efficient and scalable solutions. I have solved 300+ coding problems across platforms like LeetCode and GeeksforGeeks, which has strengthened my problem-solving and analytical thinking.</p>
+                        <p>I continuously work on improving my technical skills by building projects, exploring new technologies, and practicing DSA regularly. My goal is to become a skilled software engineer who can design impactful systems and intelligent applications.</p>
+                    </div>
+
+                    <div class="about-stats-grid">
+                        <div class="stat-item">
+                            <span class="stat-title">DSA Practice</span>
+                            <span class="stat-value">300+ Problems</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-title">Data Science</span>
+                            <span class="stat-value">Enthusiast</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-title">Full Stack Dev</span>
+                            <span class="stat-value">Intermediate</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-title">Problem Solving</span>
+                            <span class="stat-value">Strong</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills" id="skills">
+        <div class="skills-header-container reveal-up">
+            <h2 class="glowing-title-cyan">Skills & Expertise</h2>
+            <p class="skills-subtitle">
+                I specialize in Data Structures & Algorithms, Backend Development, and Data Analysis, with experience in building scalable applications and solving complex problems.
+            </p>
+        </div>
+        
+        <div class="skills-categories-wrapper wrapper">
+            
+            <!-- Category 1 -->
+            <div class="skill-category-row reveal-up">
+                <div class="skill-category-pill">Core Concepts</div>
+                <div class="skill-nodes-container">
+                    <div class="skill-node">
+                        <div class="skill-icon-circle" style="--icon-color: #00d2ff;"><i class='bx bx-network-chart'></i></div>
+                        <span>DSA</span>
+                    </div>
+                    <div class="skill-node">
+                        <div class="skill-icon-circle" style="--icon-color: #ffaa00;"><i class='bx bx-cube-alt'></i></div>
+                        <span>OOP</span>
+                    </div>
+                    <div class="skill-node">
+                        <div class="skill-icon-circle" style="--icon-color: #ff3366;"><i class='bx bx-brain'></i></div>
+                        <span>Problem Solving</span>
+                    </div>
+                    <div class="skill-node">
+                        <div class="skill-icon-circle" style="--icon-color: #00ff88;"><i class='bx bx-sitemap'></i></div>
+                        <span>Algorithms</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Category 2 -->
+            <div class="skill-category-row reveal-up" style="transition-delay: 0.1s">
+                <div class="skill-category-pill">Languages</div>
+                <div class="skill-nodes-container">
+                    <div class="skill-node">
+                        <div class="skill-icon-circle" style="--icon-color: #007ACC;"><i class='bx bxl-c-plus-plus'></i></div>
+                        <span>C++</span>
+                    </div>
+                    <div class="skill-node">
+                        <div class="skill-icon-circle" style="--icon-color: #3776AB;"><i class='bx bxl-python'></i></div>
+                        <span>Python</span>
+                    </div>
+                    <div class="skill-node">
+                        <div class="skill-icon-circle" style="--icon-color: #ED8B00;"><i class='bx bxl-java'></i></div>
+                        <span>Java</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Category 3 -->
+            <div class="skill-category-row reveal-up" style="transition-delay: 0.2s">
+                <div class="skill-category-pill">Web Development</div>
+                <div class="skill-nodes-container">
+                    <div class="skill-node">
+                        <div class="skill-icon-circle" style="--icon-color: #E34F26;"><i class='bx bxl-html5'></i></div>
+                        <span>HTML</span>
+                    </div>
+                    <div class="skill-node">
+                        <div class="skill-icon-circle" style="--icon-color: #1572B6;"><i class='bx bxl-css3'></i></div>
+                        <span>CSS</span>
+                    </div>
+                    <div class="skill-node">
+                        <div class="skill-icon-circle" style="--icon-color: #F7DF1E;"><i class='bx bxl-javascript'></i></div>
+                        <span>JavaScript</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Category 4 -->
+            <div class="skill-category-row reveal-up" style="transition-delay: 0.3s">
+                <div class="skill-category-pill">Data Tools</div>
+                <div class="skill-nodes-container">
+                    <div class="skill-node">
+                        <div class="skill-icon-circle" style="--icon-color: #F2C811;"><i class='bx bx-bar-chart-alt-2'></i></div>
+                        <span>Power BI</span>
+                    </div>
+                    <div class="skill-node">
+                        <div class="skill-icon-circle" style="--icon-color: #4CAF50;"><i class='bx bx-line-chart'></i></div>
+                        <span>Data Analysis</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Category 5 -->
+            <div class="skill-category-row reveal-up" style="transition-delay: 0.4s">
+                <div class="skill-category-pill">Tools</div>
+                <div class="skill-nodes-container">
+                    <div class="skill-node">
+                        <div class="skill-icon-circle" style="--icon-color: #F05032;"><i class='bx bxl-git'></i></div>
+                        <span>Git</span>
+                    </div>
+                    <div class="skill-node">
+                        <div class="skill-icon-circle" style="--icon-color: #ffffff;"><i class='bx bxl-github'></i></div>
+                        <span>GitHub</span>
+                    </div>
+                    <div class="skill-node">
+                        <div class="skill-icon-circle" style="--icon-color: #007ACC;"><i class='bx bx-code-alt'></i></div>
+                        <span>VS Code</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects" id="projects">
+        <h2 class="glowing-title-cyan text-center reveal-up">Projects</h2>
+        
+        <div class="featured-project-container wrapper reveal-up">
+            <div class="featured-project-card glass-card">
+                
+                <!-- Left Side: Image -->
+                <div class="featured-project-image">
+                    <img src="Screenshot 2026-03-14 220934.png" alt="DiseaseX Healthcare Platform Interface">
+                </div>
+
+                <!-- Right Side: Content -->
+                <div class="featured-project-content">
+                    <h3 class="featured-title">DiseaseX</h3>
+                    <p class="featured-description">
+                        An AI-powered healthcare prediction platform assisting in early disease detection using machine learning. Built with a modern full-stack architecture, it combines an interactive Next.js frontend with a Flask-based ML backend to deliver fast, accurate real-time forecasts for various health conditions.
+                    </p>
+
+                    <h4 class="featured-subheading">KEY FEATURES</h4>
+                    <ul class="featured-features-list">
+                        <li>Symptom-to-Disease Prediction – Detect diseases from symptoms</li>
+                        <li>Heart Disease Prediction – Analyze cardiovascular risk via ML</li>
+                        <li>Diabetes Detection – Predict probability using health parameters</li>
+                        <li>Liver Disease Analysis – Identify potential liver-related risks</li>
+                        <li>Skin Cancer Detection – Image-based classification models</li>
+                        <li>Real-time ML Predictions through REST API integration</li>
+                        <li>Cloud Deployment with scalable architecture</li>
+                    </ul>
+
+                    <div class="featured-tech-stack">
+                        <span>Next.js 15</span> <span>React 19</span> <span>TypeScript</span> <span>Tailwind</span> <span>Framer Motion</span>
+                        <span>Flask</span> <span>TensorFlow</span> <span>Scikit-learn</span> <span>OpenCV</span>
+                        <span>Vercel</span> <span>Render</span>
+                    </div>
+
+                    <div class="featured-links">
+                        <a href="#" class="icon-btn" title="GitHub Code"><i class='bx bxl-github'></i></a>
+                        <a href="#" class="icon-btn" title="Live Demo"><i class='bx bx-link-external'></i></a>
+                        <a href="#" class="featured-link-btn" title="View Code">&lt;&gt; View Code</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="sub-projects-grid wrapper reveal-up">
+            <!-- Project 1: Shark Attack EDA -->
+            <div class="sub-project-card glass-card">
+                <div class="sub-project-image">
+                    <img src="project2.png" alt="Shark Attack Exploratory Data Analysis">
+                </div>
+                <div class="sub-project-content">
+                    <h3 class="sub-project-title">Shark Attack Exploratory Data Analysis</h3>
+                    <p class="sub-project-desc">Conducted an Exploratory Data Analysis (EDA) on global shark attack incidents to uncover meaningful insights from messy real-world data. Identified patterns across countries, years, human activities, and outcomes using Python.</p>
+                    
+                    <div class="sub-project-tech">
+                        <span>Python</span> <span>Data Analysis</span>
+                    </div>
+
+                    <a href="https://github.com/jagadeeshchinta/Datascience_project" target="_blank" class="sub-project-link">View Project &rarr;</a>
+                </div>
+            </div>
+
+            <!-- Project 2: Electric Vehicle Dashboard -->
+            <div class="sub-project-card glass-card">
+                <div class="sub-project-image">
+                    <img src="project 3.png" alt="Electric Vehicle Dashboard">
+                </div>
+                <div class="sub-project-content">
+                    <h3 class="sub-project-title">Electric Vehicle Dashboard</h3>
+                    <p class="sub-project-desc">An interactive data visualization tool that highlights EV adoption trends, including vehicle makes, types, registrations, and electric range, helping users gain quick insights into the growth of sustainable transportation.</p>
+                    
+                    <div class="sub-project-tech">
+                        <span>Power BI</span> <span>Dashboard</span>
+                    </div>
+
+                    <a href="https://drive.google.com/file/d/1iLaG3o4gMvc56SSc0nKqAc2tISaR7M1U/view" target="_blank" class="sub-project-link">View Project &rarr;</a>
+                </div>
+            </div>
+
+            <!-- Project 3: Placeholder -->
+            <div class="sub-project-card glass-card">
+                <div class="sub-project-image placeholder-image">
+                    <!-- Blank image space -->
+                </div>
+                <div class="sub-project-content">
+                    <h3 class="sub-project-title">Coming Soon</h3>
+                    <p class="sub-project-desc">A new exciting project is currently in the works. Stay tuned for updates on this new full-stack or data analysis application.</p>
+                    
+                    <div class="sub-project-tech placeholder-tech">
+                        <!-- Blank tech stack -->
+                    </div>
+
+                    <a href="#" class="sub-project-link empty-link">&nbsp;</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Journey Section -->
+    <section class="education" id="education">
+        <h2 class="glowing-title-cyan reveal-up text-center">Education Journey</h2>
+        <p class="education-subtitle reveal-up text-center mb-5">
+            My <span class="education-subtitle-highlight">Qualifications</span>
+        </p>
+        
+        <div class="education-cards-wrapper wrapper">
+            
+            <!-- Card 1: B.Tech -->
+            <div class="education-card btech-card reveal-up">
+                <div class="education-image-column">
+                    <div class="education-image-box">
+                        <img src="LPU-logo.webp" alt="B.Tech Computer Science">
+                    </div>
+                </div>
+                <div class="education-content">
+                    <h3 class="education-title">Bachelor of Technology</h3>
+                    <p class="education-institution">Lovely Professional University</p>
+                    
+                    <div class="education-meta">
+                        <span><i class='bx bx-calendar'></i> 2023 - 2027</span>
+                        <span><i class='bx bx-medal'></i> <span class="score-highlight">CGPA - 7.41</span></span>
+                    </div>
+                    
+                    <p class="education-desc">
+                        Currently pursuing a Bachelor of Technology in Computer Science with a focus on software development, data structures & algorithms, and building scalable full-stack applications. Actively improving problem-solving skills through coding practice and real-world projects.
+                    </p>
+                    
+                    <div class="education-badges">
+                        <span class="edu-badge">Data Structures & Algorithms</span>
+                        <span class="edu-badge">Full Stack Development</span>
+                        <span class="edu-badge">Data Science & ML</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 2: 12th -->
+            <div class="education-card highschool-card image-right reveal-up" style="transition-delay: 0.1s">
+                <div class="education-image-column">
+                    <div class="education-image-box">
+                        <img src="clglogo.jpeg" alt="Higher Secondary Education">
+                    </div>
+                </div>
+                <div class="education-content">
+                    <h3 class="education-title">Secondary Education (12th)</h3>
+                    <p class="education-institution">Sri Chaitanya Junior College</p>
+                    
+                    <div class="education-meta">
+                        <span><i class='bx bx-check-circle'></i> Completed</span>
+                        <span><i class='bx bx-award'></i> <span class="score-highlight">Score: 89%</span></span>
+                    </div>
+                    
+                    <p class="education-desc">
+                        Completed higher secondary education in the MPC stream, developing strong analytical and logical reasoning skills with a strong emphasis on mathematics and physics.
+                    </p>
+                    
+                    <div class="education-badges">
+                        <span class="edu-badge">Math & Analytical Skills</span>
+                        <span class="edu-badge">Physics Problem Solving</span>
+                        <span class="edu-badge">Strong Science Foundation</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 3: 10th -->
+            <div class="education-card secondary-card reveal-up" style="transition-delay: 0.2s">
+                <div class="education-image-column">
+                    <div class="education-image-box">
+                        <img src="ssclogo.jpg" alt="Secondary Education">
+                    </div>
+                </div>
+                <div class="education-content">
+                    <h3 class="education-title">Higher Secondary (10th)</h3>
+                    <p class="education-institution">Sri Chaitanya School</p>
+                    
+                    <div class="education-meta">
+                        <span><i class='bx bx-check-circle'></i> Completed</span>
+                        <span><i class='bx bx-trophy'></i> <span class="score-highlight">Score: 99%</span></span>
+                    </div>
+                    
+                    <p class="education-desc">
+                        Completed secondary education with excellent academic performance, building a strong foundation in mathematics and science while actively participating in academic and co-curricular activities.
+                    </p>
+                    
+                    <div class="education-badges">
+                        <span class="edu-badge">Academic Excellence</span>
+                        <span class="edu-badge">Strong Math Foundation</span>
+                        <span class="edu-badge">Science & Tech Interest</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- My Certifications Section -->
+    <section class="certifications" id="certificates">
+        <h2 class="glowing-title-cyan reveal-up text-center">My Certifications</h2>
+        <p class="education-subtitle reveal-up text-center mb-5">
+            Showcasing my <span class="education-subtitle-highlight">technical achievements</span> and certifications
+        </p>
+
+        <div class="cert-filters reveal-up text-center">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="merit">Merit</button>
+            <button class="filter-btn" data-filter="software-development">Software Development</button>
+            <button class="filter-btn" data-filter="programming">Programming</button>
+            <button class="filter-btn" data-filter="computer-science">Computer Science</button>
+            <button class="filter-btn" data-filter="data-science">Data Science</button>
+            <button class="filter-btn" data-filter="devops">DevOps</button>
+            <button class="filter-btn" data-filter="hackathon">Hackathon</button>
+            <button class="filter-btn" data-filter="achievements">Achievements</button>
+            <button class="filter-btn" data-filter="professional">Professional</button>
+        </div>
+
+        <div class="cert-grid wrapper mt-5">
+            
+            <!-- Card 1 -->
+            <div class="cert-card reveal-up" data-category="professional">
+                <div class="cert-image">
+                    <img src="summer_training_cert.png" loading="lazy" alt="Summer Training Program">
+                </div>
+                <div class="cert-content">
+                    <span class="cert-badge">Professional</span>
+                    <h3 class="cert-title">Summer Training Program</h3>
+                    <p class="cert-org">Lovely Professional University</p>
+                    <div class="cert-meta">
+                        <span><i class='bx bx-calendar'></i> 2025</span>
+                    </div>
+                    <p class="cert-desc">Certification for completing summer training program.</p>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="cert-card reveal-up" data-category="programming" style="transition-delay: 0.1s">
+                <div class="cert-image">
+                    <img src="gfgdsa160.png" loading="lazy" alt="GfG - 160 DSA">
+                </div>
+                <div class="cert-content">
+                    <span class="cert-badge">Programming</span>
+                    <h3 class="cert-title">GfG - 160 DSA</h3>
+                    <p class="cert-org">geeksforgeeks</p>
+                    <div class="cert-meta">
+                        <span><i class='bx bx-calendar'></i> 2025</span>
+                    </div>
+                    <p class="cert-desc">Certificate for completing GfG 160 - 160 Days of problem solving.</p>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="cert-card reveal-up" data-category="hackathon" style="transition-delay: 0.2s">
+                <div class="cert-image">
+                    <img src="Hackthon_certificate.png" loading="lazy" alt="Code A Haunt">
+                </div>
+                <div class="cert-content">
+                    <span class="cert-badge">Hackathon</span>
+                    <h3 class="cert-title">Code A Haunt</h3>
+                    <p class="cert-org">Lovely Professional University</p>
+                    <div class="cert-meta">
+                        <span><i class='bx bx-calendar'></i> 2024</span>
+                    </div>
+                    <p class="cert-desc">Merit certificate for 2nd Runner-up at Code -A - Haunt hackathon.</p>
+                </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="cert-card reveal-up" data-category="software-development">
+                <div class="cert-image">
+                    <img src="gfg_AI_TOOLS_certificate.png" loading="lazy" alt="AI Tools Skill Up">
+                </div>
+                <div class="cert-content">
+                    <span class="cert-badge">Software Development</span>
+                    <h3 class="cert-title">AI Tools Skill Up</h3>
+                    <p class="cert-org">geeksforgeeks</p>
+                    <div class="cert-meta">
+                        <span><i class='bx bx-calendar'></i> 2025</span>
+                    </div>
+                    <p class="cert-desc">Certificate for successful completion of Machine Learning course.</p>
+                </div>
+            </div>
+
+            <!-- Card 5 -->
+            <div class="cert-card reveal-up" data-category="data-science" style="transition-delay: 0.1s">
+                <div class="cert-image">
+                    <img src="DSA_NEOCOLAB_CERTIFICATE.png" loading="lazy" alt="Neo - Colab">
+                </div>
+                <div class="cert-content">
+                    <span class="cert-badge">Data Science</span>
+                    <h3 class="cert-title">Neo - Colab</h3>
+                    <p class="cert-org">Lovely Professional University</p>
+                    <div class="cert-meta">
+                        <span><i class='bx bx-calendar'></i> 2024</span>
+                    </div>
+                    <p class="cert-desc">Certificate for successful completion DSA course.</p>
+                </div>
+            </div>
+
+            <!-- Card 6 -->
+            <div class="cert-card reveal-up" data-category="computer-science" style="transition-delay: 0.2s">
+                <div class="cert-image">
+                    <img src="Cloud_Computing_1.png" loading="lazy" alt="NPTEL">
+                </div>
+                <div class="cert-content">
+                    <span class="cert-badge">Computer Science</span>
+                    <h3 class="cert-title">NPTEL</h3>
+                    <p class="cert-org">NPTEL</p>
+                    <div class="cert-meta">
+                        <span><i class='bx bx-calendar'></i> 2024</span>
+                    </div>
+                    <p class="cert-desc">NPTEL course merit certificate.</p>
+                </div>
+            </div>
+
+            <!-- Card 7 -->
+            <div class="cert-card reveal-up" data-category="professional">
+                <div class="cert-image">
+                    <img src="Java_certificate_from_neocolab.png" loading="lazy" alt="Neo - Colab">
+                </div>
+                <div class="cert-content">
+                    <span class="cert-badge">Professional</span>
+                    <h3 class="cert-title">Neo - Colab</h3>
+                    <p class="cert-org">Lovely Professional University</p>
+                    <div class="cert-meta">
+                        <span><i class='bx bx-calendar'></i> 2024</span>
+                    </div>
+                    <p class="cert-desc">Certification for completing Java programming practice course.</p>
+                </div>
+            </div>
+
+            <!-- Card 8 -->
+            <div class="cert-card reveal-up" data-category="data-science" style="transition-delay: 0.1s">
+                <div class="cert-image">
+                    <img src="power_bi_cert.png" loading="lazy" alt="Power Bi">
+                </div>
+                <div class="cert-content">
+                    <span class="cert-badge">Data Science</span>
+                    <h3 class="cert-title">Power Bi</h3>
+                    <p class="cert-org">PowerBI Workshop</p>
+                    <div class="cert-meta">
+                        <span><i class='bx bx-calendar'></i> 2025</span>
+                    </div>
+                    <p class="cert-desc">Certification for completing course.</p>
+                </div>
+            </div>
+
+            <!-- Card 9 -->
+            <div class="cert-card reveal-up" data-category="programming" style="transition-delay: 0.2s">
+                <div class="cert-image">
+                    <img src="python_scaler_cert.png" loading="lazy" alt="Python">
+                </div>
+                <div class="cert-content">
+                    <span class="cert-badge">Programming</span>
+                    <h3 class="cert-title">Python</h3>
+                    <p class="cert-org">SCALER</p>
+                    <div class="cert-meta">
+                        <span><i class='bx bx-calendar'></i> 2024</span>
+                    </div>
+                    <p class="cert-desc">Certification for completing Python Course.</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <h2 class="heading reveal-up">Contact <span>Me!</span></h2>
+        
+        <div class="contact-wrapper">
+             <div class="contact-info glass-card reveal-up">
+                <h3>Let's Connect</h3>
+                <p>I'm always open to discussing new projects, creative ideas or opportunities to be part of your visions.</p>
+                
+                <div class="info-item">
+                    <i class='bx bxs-envelope'></i>
+                    <span>chintajagadeesh905@gmail.com</span>
+                </div>
+                
+                <div class="info-item">
+                    <i class='bx bxs-phone'></i>
+                    <span>+91 7989929685</span>
+                </div>
+                
+                <div class="info-item">
+                    <i class='bx bxs-map'></i>
+                    <span>Vizag, Andhra Pradesh</span>
+                </div>
+                
+                <div class="social-links large">
+                    <a href="https://www.linkedin.com/in/jagadeesh-chinta-338014241/" target="_blank"><i class='bx bxl-linkedin'></i></a>
+                    <a href="http://github.com" target="_blank"><i class='bx bxl-github'></i></a>
+                </div>
+             </div>
+
+             <!-- Optional Form (just visual structure) -->
+             <form action="https://api.web3forms.com/submit" method="POST" id="contact-form" class="contact-form glass-card reveal-up" style="transition-delay: 0.2s">
+                 <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE"> <!-- Web3Forms Access Key -->
+                 <div class="input-box">
+                     <input type="text" name="name" placeholder="Full Name" required>
+                     <input type="email" name="email" placeholder="Email Address" required>
+                 </div>
+                 <div class="input-box">
+                    <input type="number" name="mobile" placeholder="Mobile Number">
+                    <input type="text" name="subject" placeholder="Email Subject">
+                </div>
+                <textarea name="message" id="" cols="30" rows="10" placeholder="Your Message" required></textarea>
+                <div id="form-result" style="display: none; margin-bottom: 1.5rem; font-size: 1.4rem; font-weight: 600;"></div>
+                <input type="submit" value="Send Message" class="btn" id="submit-btn">
+             </form>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-text">
+            <p>Copyright &copy; 2026 by Jagadeesh Chinta | All Rights Reserved.</p>
+        </div>
+        <div class="footer-iconTop">
+            <a href="#home"><i class='bx bx-up-arrow-alt'></i></a>
+        </div>
+    </footer>
+
+    <!-- Certificate Preview Modal -->
+    <div class="cert-modal" id="certModal">
+        <div class="modal-controls">
+            <a href="#" class="modal-download" id="modalDownload" title="Download Certificate"><i class='bx bx-download'></i></a>
+            <button class="modal-close" id="modalClose" title="Close Modal"><i class='bx bx-x'></i></button>
+        </div>
+        <div class="modal-content">
+            <img src="" alt="Certificate Preview" id="modalImage">
+            <div class="modal-details">
+                <div class="modal-badges">
+                    <span class="modal-badge verified-badge"><i class='bx bxs-badge-check'></i> Verified</span>
+                    <span class="modal-badge category-badge" id="modalCategory">Merit</span>
+                </div>
+                <h3 class="modal-title" id="modalTitle">Certificate Title</h3>
+                <div class="modal-meta">
+                    <span>Organization: <strong id="modalOrg">Organization Name</strong></span>
+                    <span>Year: <strong id="modalYear">2024</strong></span>
+                </div>
+                <p class="modal-desc" id="modalDesc">Certificate description goes here.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html>
